@@ -1,4 +1,9 @@
-# Headers for CSS files
+# Headers for specific CSS file
+/assets/index.css
+  Content-Type: text/css; charset=utf-8
+  Cache-Control: public, max-age=31536000, immutable
+
+# Headers for all CSS files
 /assets/*.css
   Content-Type: text/css; charset=utf-8
   Cache-Control: public, max-age=31536000, immutable

@@ -24,6 +24,12 @@ export default defineConfig({
           'react-vendor': ['react', 'react-dom'],
           'chart-vendor': ['recharts'],
           'pdf-vendor': ['jspdf', 'jspdf-autotable'],
+        },
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
+            return 'assets/[name].css';
+          }
+          return 'assets/[name]-[hash][extname]';
         }
       }
     }
