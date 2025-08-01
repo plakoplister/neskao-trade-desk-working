@@ -162,7 +162,7 @@ const NeskaoTradeDesk: React.FC = () => {
                   </>
                 )}
               </button>
-              <span className="text-sm font-semibold text-gray-700 bg-gray-100 px-2 py-1 rounded">V4</span>
+              <span className="text-sm font-semibold text-gray-700 bg-gray-100 px-2 py-1 rounded">V5</span>
             </div>
           </div>
         </div>
