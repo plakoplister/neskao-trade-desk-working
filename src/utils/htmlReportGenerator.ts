@@ -524,12 +524,13 @@ export class HtmlReportGenerator {
         
         <h3>Points clés de l'analyse</h3>
         <ul>
-            <li><strong>12 localisations analysées</strong> selon 5 critères pondérés : Réglementation (25%), Impact Social (22%), ROI (20%), Financement DFI (18%) et Cash Management (15%)</li>
+            <li><strong>Volume de trading initial</strong> : 3,000 tonnes An 1, croissance vers 14,830 tonnes An 3</li>
+            <li><strong>13 localisations analysées</strong> selon 5 critères pondérés : Réglementation (15%), Impact Social (30%), ROI (15%), Financement DFI (10%) et Cash Management (30%)</li>
             <li><strong>Paris obtient le meilleur score global</strong> (8.08/10) grâce à l'équilibre optimal entre tous les critères</li>
             <li><strong>Rentabilité immédiate</strong> : EBITDA positif dès l'An 1 (+0.12M€)</li>
             <li><strong>Accès privilégié aux financements</strong> AFD/Proparco pour la mission d'impact social</li>
             <li><strong>Convention fiscale excellente</strong> avec la Côte d'Ivoire</li>
-            <li><strong>Coûts SG&A compétitifs</strong> : 3.99M€ sur 3 ans, 4ème position</li>
+            <li><strong>Coûts SG&A compétitifs</strong> : 3.99M€ sur 3 ans, 5ème position après Zoug</li>
         </ul>
     </div>
 
@@ -559,7 +560,7 @@ export class HtmlReportGenerator {
     <!-- 1. DASHBOARD -->
     <h1><span class="numero">1.</span> Dashboard - Vue d'ensemble</h1>
     
-    <h2>Classement Final des 12 Localisations</h2>
+    <h2>Classement Final des 13 Localisations</h2>
     
     <table>
         <tr>
@@ -581,10 +582,10 @@ export class HtmlReportGenerator {
             <td><span class="badge badge-success">RECOMMANDÉ</span></td>
         </tr>
         <tr style="background-color: #fef3c7;">
-            <td>2</td>
-            <td>Singapour</td>
+            <td><strong>2</strong></td>
+            <td><strong>Singapour</strong></td>
             <td>Asie</td>
-            <td>8.06</td>
+            <td><strong>8.06</strong></td>
             <td>+0.01M€</td>
             <td>0.81M€</td>
             <td><span class="badge badge-warning">POSSIBLE</span></td>
@@ -598,14 +599,14 @@ export class HtmlReportGenerator {
             <td>0.89M€</td>
             <td><span class="badge badge-success">RECOMMANDÉ</span></td>
         </tr>
-        <tr style="background-color: #fef3c7;">
-            <td>4</td>
-            <td>Amsterdam</td>
+        <tr style="background-color: #dcfce7;">
+            <td><strong>4</strong></td>
+            <td><strong>Amsterdam</strong></td>
             <td>Europe</td>
-            <td>7.67</td>
+            <td><strong>7.76</strong></td>
             <td>+0.04M€</td>
             <td>0.87M€</td>
-            <td><span class="badge badge-warning">POSSIBLE</span></td>
+            <td><span class="badge badge-success">RECOMMANDÉ</span></td>
         </tr>
         <tr style="background-color: #fef3c7;">
             <td>5</td>
@@ -616,65 +617,74 @@ export class HtmlReportGenerator {
             <td>3.13M€</td>
             <td><span class="badge badge-warning">POSSIBLE</span></td>
         </tr>
+        <tr style="background-color: #dcfce7;">
+            <td><strong>6</strong></td>
+            <td><strong>Zoug</strong></td>
+            <td>Europe</td>
+            <td><strong>7.37</strong></td>
+            <td>-0.301M€</td>
+            <td>1.25M€</td>
+            <td><span class="badge badge-success">RECOMMANDÉ</span></td>
+        </tr>
         <tr style="background-color: #fef3c7;">
-            <td>6</td>
+            <td>7</td>
             <td>Hambourg</td>
             <td>Europe</td>
-            <td>7.32</td>
+            <td>6.96</td>
             <td>+0.05M€</td>
             <td>0.93M€</td>
             <td><span class="badge badge-warning">POSSIBLE</span></td>
         </tr>
         <tr style="background-color: #fef3c7;">
-            <td>7</td>
+            <td>8</td>
             <td>Londres</td>
             <td>Europe</td>
-            <td>7.06</td>
+            <td>6.90</td>
             <td>-0.34M€</td>
             <td>1.00M€</td>
             <td><span class="badge badge-warning">POSSIBLE</span></td>
         </tr>
-        <tr style="background-color: #fee2e2;">
-            <td>8</td>
-            <td>Maroc CFC</td>
-            <td>Zone franche</td>
-            <td>6.91</td>
-            <td>+0.47M€</td>
-            <td>5.67M€</td>
-            <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
-        </tr>
-        <tr style="background-color: #fee2e2;">
-            <td>9</td>
-            <td>Tel Aviv</td>
-            <td>Moyen-Orient</td>
-            <td>6.58</td>
-            <td>-0.03M€</td>
-            <td>2.17M€</td>
-            <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
-        </tr>
-        <tr style="background-color: #fee2e2;">
-            <td>10</td>
-            <td>Maurice</td>
-            <td>Offshore</td>
-            <td>6.56</td>
-            <td>+0.41M€</td>
-            <td>3.76M€</td>
-            <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
-        </tr>
         <tr style="background-color: #fef3c7;">
-            <td>11</td>
+            <td>9</td>
             <td>Dubai</td>
             <td>Zone franche</td>
-            <td>6.50</td>
+            <td>6.45</td>
             <td>0.00M€</td>
             <td>2.59M€</td>
             <td><span class="badge badge-warning">POSSIBLE</span></td>
         </tr>
         <tr style="background-color: #fee2e2;">
+            <td>10</td>
+            <td>Maroc CFC</td>
+            <td>Zone franche</td>
+            <td>6.41</td>
+            <td>+0.47M€</td>
+            <td>5.67M€</td>
+            <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
+        </tr>
+        <tr style="background-color: #fee2e2;">
+            <td>11</td>
+            <td>Tel Aviv</td>
+            <td>Moyen-Orient</td>
+            <td>6.23</td>
+            <td>-0.03M€</td>
+            <td>2.17M€</td>
+            <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
+        </tr>
+        <tr style="background-color: #fee2e2;">
             <td>12</td>
+            <td>Maurice</td>
+            <td>Offshore</td>
+            <td>6.22</td>
+            <td>+0.41M€</td>
+            <td>3.76M€</td>
+            <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
+        </tr>
+        <tr style="background-color: #fee2e2;">
+            <td>13</td>
             <td>Andorre</td>
             <td>Zone franche</td>
-            <td>5.23</td>
+            <td>5.13</td>
             <td>+0.38M€</td>
             <td>2.88M€</td>
             <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
@@ -1130,10 +1140,10 @@ export class HtmlReportGenerator {
         </tr>
         <tr>
             <td><strong>Volume total (tonnes)</strong></td>
-            <td>3,245</td>
+            <td>2,950</td>
             <td>6,809</td>
-            <td>11,122</td>
-            <td>21,176</td>
+            <td>14,830</td>
+            <td>24,589</td>
         </tr>
         <tr>
             <td><strong>CA (M€)</strong></td>
@@ -1185,6 +1195,7 @@ export class HtmlReportGenerator {
             <th>Paris</th>
             <th>Genève</th>
             <th>Amsterdam</th>
+            <th>Chypre</th>
             <th>Zoug</th>
             <th>Londres</th>
         </tr>
@@ -1195,78 +1206,97 @@ export class HtmlReportGenerator {
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td>Head of Trading</td>
-            <td>250K€</td>
-            <td>350K€</td>
+            <td>Managing/Directeur Général</td>
             <td>280K€</td>
+            <td>350K€</td>
+            <td>308K€</td>
+            <td>300K€</td>
             <td>380K€</td>
             <td>350K€</td>
         </tr>
         <tr>
-            <td>Traders (2-3)</td>
-            <td>300K€</td>
-            <td>400K€</td>
-            <td>340K€</td>
-            <td>450K€</td>
-            <td>420K€</td>
+            <td>Responsable Trading (0.5 FTE)</td>
+            <td>0K€</td>
+            <td>0K€</td>
+            <td>0K€</td>
+            <td>0K€</td>
+            <td>0K€</td>
+            <td>0K€</td>
         </tr>
         <tr>
-            <td>Risk/Compliance</td>
-            <td>120K€</td>
-            <td>150K€</td>
-            <td>130K€</td>
-            <td>160K€</td>
-            <td>160K€</td>
+            <td>Risk/Compliance (0.5 FTE)</td>
+            <td>60K€</td>
+            <td>78K€</td>
+            <td>66K€</td>
+            <td>70K€</td>
+            <td>90K€</td>
+            <td>78K€</td>
         </tr>
         <tr>
-            <td>Support (2-3)</td>
-            <td>140K€</td>
-            <td>180K€</td>
-            <td>160K€</td>
-            <td>190K€</td>
-            <td>200K€</td>
+            <td>Assistant Admin (0.5 FTE)</td>
+            <td>38K€</td>
+            <td>55K€</td>
+            <td>42K€</td>
+            <td>50K€</td>
+            <td>60K€</td>
+            <td>124K€</td>
         </tr>
         <tr style="background-color: #f1f5f9;">
             <td><strong>Total Personnel</strong></td>
-            <td><strong>810K€</strong></td>
-            <td><strong>1,080K€</strong></td>
-            <td><strong>910K€</strong></td>
-            <td><strong>1,180K€</strong></td>
-            <td><strong>1,130K€</strong></td>
+            <td><strong>378K€</strong></td>
+            <td><strong>483K€</strong></td>
+            <td><strong>416K€</strong></td>
+            <td><strong>420K€</strong></td>
+            <td><strong>530K€</strong></td>
+            <td><strong>552K€</strong></td>
         </tr>
         <tr>
-            <td><strong>BUREAUX</strong></td>
-            <td>98K€</td>
-            <td>171K€</td>
-            <td>128K€</td>
-            <td>165K€</td>
-            <td>195K€</td>
+            <td><strong>BUREAUX (60m² An1)</strong></td>
+            <td>189K€</td>
+            <td>267K€</td>
+            <td>180K€</td>
+            <td>199K€</td>
+            <td>310K€</td>
+            <td>337K€</td>
         </tr>
         <tr>
             <td><strong>IT & SYSTÈMES</strong></td>
-            <td>194K€</td>
-            <td>194K€</td>
-            <td>194K€</td>
-            <td>194K€</td>
-            <td>208K€</td>
+            <td>123K€</td>
+            <td>123K€</td>
+            <td>123K€</td>
+            <td>123K€</td>
+            <td>150K€</td>
+            <td>123K€</td>
         </tr>
         <tr>
             <td><strong>COMPLIANCE</strong></td>
-            <td>124K€</td>
-            <td>142K€</td>
-            <td>124K€</td>
-            <td>142K€</td>
-            <td>156K€</td>
+            <td>51K€</td>
+            <td>73K€</td>
+            <td>51K€</td>
+            <td>55K€</td>
+            <td>149K€</td>
+            <td>65K€</td>
         </tr>
         <tr>
-            <td><strong>AUTRES</strong></td>
-            <td>64K€</td>
-            <td>86K€</td>
-            <td>82K€</td>
-            <td>86K€</td>
-            <td>98K€</td>
+            <td><strong>VOYAGES & AUTRES</strong></td>
+            <td>33K€</td>
+            <td>33K€</td>
+            <td>33K€</td>
+            <td>33K€</td>
+            <td>50K€</td>
+            <td>39K€</td>
+        </tr>
+        <tr style="background-color: #dcfce7;">
+            <td><strong>TOTAL AN1</strong></td>
+            <td><strong>774K€</strong></td>
+            <td><strong>979K€</strong></td>
+            <td><strong>803K€</strong></td>
+            <td><strong>830K€</strong></td>
+            <td><strong>1,189K€</strong></td>
+            <td><strong>1,116K€</strong></td>
         </tr>
     </table>
     
@@ -1276,139 +1306,139 @@ export class HtmlReportGenerator {
         <tr>
             <th>Rang</th>
             <th>Ville</th>
-            <th>An 1 (M€)</th>
-            <th>An 2 (M€)</th>
-            <th>An 3 (M€)</th>
+            <th>An 1 (k€)</th>
+            <th>An 2 (k€)</th>
+            <th>An 3 (k€)</th>
             <th>Total 3 ans</th>
             <th>€/tonne An3</th>
         </tr>
         <tr style="background-color: #dcfce7;">
             <td>1</td>
             <td><strong>Maroc CFC</strong></td>
-            <td>0.69</td>
-            <td>0.72</td>
-            <td>0.97</td>
-            <td><strong>2.38 M€</strong></td>
-            <td>40</td>
+            <td>412</td>
+            <td>430</td>
+            <td>582</td>
+            <td><strong>1,424 k€</strong></td>
+            <td>39</td>
         </tr>
         <tr style="background-color: #dcfce7;">
             <td>2</td>
             <td><strong>Maurice</strong></td>
-            <td>0.80</td>
-            <td>0.82</td>
-            <td>1.09</td>
-            <td><strong>2.70 M€</strong></td>
+            <td>477</td>
+            <td>492</td>
+            <td>652</td>
+            <td><strong>1,621 k€</strong></td>
             <td>44</td>
         </tr>
         <tr style="background-color: #dcfce7;">
             <td>3</td>
             <td><strong>Andorre</strong></td>
-            <td>0.87</td>
-            <td>0.86</td>
-            <td>1.14</td>
-            <td><strong>2.87 M€</strong></td>
-            <td>47</td>
+            <td>524</td>
+            <td>515</td>
+            <td>685</td>
+            <td><strong>1,724 k€</strong></td>
+            <td>46</td>
         </tr>
         <tr style="background-color: #dcfce7;">
             <td>4</td>
             <td><strong>Paris</strong></td>
-            <td>1.29</td>
-            <td>1.22</td>
-            <td>1.48</td>
-            <td><strong>3.99 M€</strong></td>
+            <td>774</td>
+            <td>731</td>
+            <td>887</td>
+            <td><strong>2,392 k€</strong></td>
             <td>60</td>
         </tr>
         <tr>
             <td>5</td>
             <td>Hambourg</td>
-            <td>1.30</td>
-            <td>1.25</td>
-            <td>1.64</td>
-            <td>4.19 M€</td>
-            <td>67</td>
+            <td>778</td>
+            <td>752</td>
+            <td>983</td>
+            <td>2,513 k€</td>
+            <td>66</td>
         </tr>
         <tr>
             <td>6</td>
-            <td>Chypre</td>
-            <td>1.38</td>
-            <td>1.33</td>
-            <td>1.68</td>
-            <td>4.39 M€</td>
+            <td>Amsterdam</td>
+            <td>803</td>
+            <td>791</td>
+            <td>1,018</td>
+            <td>2,612 k€</td>
             <td>69</td>
         </tr>
         <tr>
             <td>7</td>
-            <td>Amsterdam</td>
-            <td>1.34</td>
-            <td>1.32</td>
-            <td>1.70</td>
-            <td>4.35 M€</td>
-            <td>69</td>
+            <td>Chypre</td>
+            <td>830</td>
+            <td>798</td>
+            <td>1,007</td>
+            <td>2,635 k€</td>
+            <td>68</td>
         </tr>
         <tr>
             <td>8</td>
             <td>Dubai</td>
-            <td>1.41</td>
-            <td>1.33</td>
-            <td>1.71</td>
-            <td>4.45 M€</td>
-            <td>70</td>
+            <td>844</td>
+            <td>798</td>
+            <td>1,028</td>
+            <td>2,670 k€</td>
+            <td>69</td>
         </tr>
         <tr>
             <td>9</td>
             <td>Tel Aviv</td>
-            <td>1.45</td>
-            <td>1.38</td>
-            <td>1.82</td>
-            <td>4.65 M€</td>
-            <td>75</td>
+            <td>871</td>
+            <td>829</td>
+            <td>1,090</td>
+            <td>2,790 k€</td>
+            <td>74</td>
         </tr>
         <tr>
             <td>10</td>
             <td>Genève</td>
-            <td>1.69</td>
-            <td>1.57</td>
-            <td>2.00</td>
-            <td>5.26 M€</td>
-            <td>82</td>
+            <td>979</td>
+            <td>901</td>
+            <td>1,157</td>
+            <td>3,037 k€</td>
+            <td>78</td>
         </tr>
         <tr>
             <td>11</td>
             <td>Singapour</td>
-            <td>1.75</td>
-            <td>1.68</td>
-            <td>2.14</td>
-            <td>5.57 M€</td>
-            <td>88</td>
+            <td>1,053</td>
+            <td>1,005</td>
+            <td>1,286</td>
+            <td>3,344 k€</td>
+            <td>87</td>
         </tr>
-        <tr style="background-color: #fef2f2;">
+        <tr>
             <td>12</td>
             <td>Londres</td>
-            <td>1.86</td>
-            <td>1.74</td>
-            <td>2.22</td>
-            <td>5.81 M€</td>
-            <td>91</td>
+            <td>1,116</td>
+            <td>1,042</td>
+            <td>1,330</td>
+            <td>3,488 k€</td>
+            <td>90</td>
         </tr>
         <tr style="background-color: #fef2f2;">
             <td>13</td>
             <td><strong>Zoug</strong></td>
-            <td>1.189</td>
-            <td>1.092</td>
-            <td>1.406</td>
-            <td><strong>3.687 M€</strong></td>
-            <td>123</td>
+            <td>1,189</td>
+            <td>1,092</td>
+            <td>1,406</td>
+            <td><strong>3,687 k€</strong></td>
+            <td>95</td>
         </tr>
     </table>
     
     <div class="highlight-box">
         <p><strong>Analyse des coûts SG&A :</strong></p>
         <ul>
-            <li><strong>Paris (4ème position)</strong> : Excellent équilibre coût/qualité parmi les hubs européens majeurs</li>
+            <li><strong>Paris (4ème position)</strong> : Excellent équilibre coût/qualité parmi les hubs européens majeurs (2.392M€)</li>
+            <li><strong>Zoug (13ème position)</strong> : Coûts les plus élevés (3.687M€) avec ratio €/tonne à 95€, mais salaires premium justifiés</li>
             <li><strong>Économies d'échelle</strong> : Réduction du ratio €/tonne de 75% entre An 1 et An 3</li>
-            <li><strong>Zones offshore</strong> (Maroc, Maurice) : Coûts les plus bas mais avec limitations opérationnelles</li>
-            <li><strong>Zoug (13ème position)</strong> : Coûts élevés (123€/tonne) mais justifiés par excellence fiscale et trading</li>
-            <li><strong>Hubs premium</strong> (Genève, Londres, Singapour) : Coûts élevés compensés par accès privilégié aux marchés</li>
+            <li><strong>Zones offshore</strong> (Maroc, Maurice, Andorre) : Coûts les plus bas mais avec limitations opérationnelles</li>
+            <li><strong>Hubs premium</strong> (Genève, Londres, Singapour, Zoug) : Coûts élevés compensés par accès privilégié aux marchés</li>
         </ul>
     </div>
 
@@ -1442,98 +1472,26 @@ export class HtmlReportGenerator {
             <td>5.14</td>
             <td><strong>543.2%</strong></td>
         </tr>
-        <tr>
+        <tr style="background-color: #dcfce7;">
             <td>2</td>
-            <td>Maroc CFC</td>
-            <td>+0.93</td>
-            <td>3.33</td>
-            <td>10.42</td>
-            <td>7.89</td>
-            <td>139.2%</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Maurice</td>
-            <td>+0.82</td>
-            <td>3.23</td>
-            <td>10.30</td>
-            <td>6.84</td>
-            <td>181.9%</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Andorre</td>
-            <td>+0.76</td>
-            <td>3.20</td>
-            <td>10.25</td>
-            <td>6.97</td>
-            <td>242.4%</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Singapour</td>
-            <td>+0.02</td>
-            <td>2.38</td>
-            <td>9.25</td>
-            <td>3.22</td>
-            <td>200.0%</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Chypre</td>
-            <td>+0.40</td>
-            <td>2.73</td>
-            <td>9.71</td>
-            <td>6.22</td>
-            <td>248.8%</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Hambourg</td>
-            <td>+0.09</td>
-            <td>2.56</td>
-            <td>9.40</td>
-            <td>3.96</td>
-            <td>132.0%</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Amsterdam</td>
-            <td>+0.07</td>
-            <td>2.56</td>
-            <td>9.40</td>
-            <td>4.82</td>
-            <td>176.6%</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>Dubai</td>
-            <td>0.00</td>
-            <td>2.35</td>
-            <td>9.18</td>
-            <td>4.55</td>
-            <td>175.7%</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>Tel Aviv</td>
-            <td>-0.06</td>
-            <td>2.30</td>
-            <td>9.07</td>
-            <td>3.85</td>
-            <td>177.4%</td>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td>Genève</td>
-            <td>-0.23</td>
-            <td>2.34</td>
-            <td>9.09</td>
-            <td>5.13</td>
-            <td>187.4%</td>
+            <td><strong>Genève</strong></td>
+            <td><strong>-0.09</strong></td>
+            <td>1.23</td>
+            <td>6.54</td>
+            <td>4.95</td>
+            <td><strong>570.8%</strong></td>
         </tr>
         <tr style="background-color: #dcfce7;">
-            <td>12</td>
+            <td>3</td>
+            <td><strong>Amsterdam</strong></td>
+            <td><strong>+0.04</strong></td>
+            <td>1.34</td>
+            <td>6.68</td>
+            <td>5.18</td>
+            <td><strong>595.4%</strong></td>
+        </tr>
+        <tr style="background-color: #dcfce7;">
+            <td>4</td>
             <td><strong>Zoug</strong></td>
             <td><strong>-0.301</strong></td>
             <td>1.034</td>
@@ -1541,14 +1499,86 @@ export class HtmlReportGenerator {
             <td>5.29</td>
             <td><strong>468.5%</strong></td>
         </tr>
-        <tr style="background-color: #fef2f2;">
-            <td>13</td>
+        <tr>
+            <td>5</td>
+            <td>Hambourg</td>
+            <td>+0.05</td>
+            <td>1.38</td>
+            <td>6.72</td>
+            <td>5.07</td>
+            <td>547.3%</td>
+        </tr>
+        <tr>
+            <td>6</td>
             <td>Londres</td>
-            <td><strong>-0.67</strong></td>
-            <td>2.17</td>
-            <td>8.88</td>
-            <td>3.00</td>
-            <td>100.0%</td>
+            <td>-0.34</td>
+            <td>1.09</td>
+            <td>6.37</td>
+            <td>4.73</td>
+            <td>473.0%</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Singapour</td>
+            <td>+0.01</td>
+            <td>1.12</td>
+            <td>6.41</td>
+            <td>5.29</td>
+            <td>642.0%</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Chypre</td>
+            <td>+0.20</td>
+            <td>1.33</td>
+            <td>6.65</td>
+            <td>4.64</td>
+            <td>394.1%</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Dubai</td>
+            <td>0.00</td>
+            <td>1.33</td>
+            <td>6.67</td>
+            <td>4.26</td>
+            <td>342.3%</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Tel Aviv</td>
+            <td>-0.03</td>
+            <td>1.30</td>
+            <td>6.61</td>
+            <td>3.86</td>
+            <td>384.4%</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Andorre</td>
+            <td>+0.38</td>
+            <td>1.61</td>
+            <td>7.01</td>
+            <td>4.58</td>
+            <td>319.4%</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Maurice</td>
+            <td>+0.41</td>
+            <td>1.64</td>
+            <td>7.05</td>
+            <td>4.30</td>
+            <td>234.0%</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Maroc CFC</td>
+            <td>+0.47</td>
+            <td>1.70</td>
+            <td>7.12</td>
+            <td>4.10</td>
+            <td>147.2%</td>
         </tr>
     </table>
     
@@ -1556,25 +1586,25 @@ export class HtmlReportGenerator {
         <div class="metric-box">
             <h4>Classement EBITDA An1</h4>
             <ol>
-                <li>Maroc CFC : +0.93 M€</li>
-                <li>Maurice : +0.82 M€</li>
-                <li>Andorre : +0.76 M€</li>
-                <li>Chypre : +0.40 M€</li>
+                <li>Maroc CFC : +0.47 M€</li>
+                <li>Maurice : +0.41 M€</li>
+                <li>Andorre : +0.38 M€</li>
+                <li>Chypre : +0.20 M€</li>
                 <li><strong>Paris : +0.12 M€</strong></li>
-                <li>Hambourg : +0.09 M€</li>
+                <li>Hambourg : +0.05 M€</li>
             </ol>
         </div>
         
         <div class="metric-box">
             <h4>Classement ROI 3 ans</h4>
             <ol>
+                <li>Singapour : 642.0%</li>
+                <li>Amsterdam : 595.4%</li>
+                <li>Genève : 570.8%</li>
+                <li>Hambourg : 547.3%</li>
                 <li><strong>Paris : 543.2%</strong></li>
                 <li><strong>Zoug : 468.5%</strong></li>
-                <li>Chypre : 248.8%</li>
-                <li>Andorre : 242.4%</li>
-                <li>Singapour : 200.0%</li>
-                <li>Genève : 187.4%</li>
-                <li>Maurice : 181.9%</li>
+                <li>Londres : 473.0%</li>
             </ol>
         </div>
     </div>
@@ -1582,10 +1612,10 @@ export class HtmlReportGenerator {
     <div class="highlight-box">
         <h4>Analyse de la rentabilité - Pourquoi Paris ?</h4>
         <ul>
-            <li><strong>Rentabilité immédiate</strong> : 4ème meilleur EBITDA An1 (+0.12M€), critère essentiel pour le lancement</li>
-            <li><strong>ROI solide</strong> : 543.2% sur 3 ans, dans le top 6 des localisations</li>
-            <li><strong>Stabilité</strong> : Pas de déficit en An1 contrairement à Genève (-0.23M€) et Londres (-0.67M€)</li>
-            <li><strong>Équilibre</strong> : Performance financière acceptable combinée aux meilleurs scores Impact Social et DFI</li>
+            <li><strong>Rentabilité immédiate</strong> : 5ème meilleur EBITDA An1 (+0.12M€), critère essentiel pour le lancement</li>
+            <li><strong>ROI solide</strong> : 543.2% sur 3 ans, dans le top 5 des localisations</li>
+            <li><strong>Stabilité</strong> : Pas de déficit en An1 contrairement à Genève (-0.09M€), Zoug (-0.301M€) et Londres (-0.34M€)</li>
+            <li><strong>Équilibre</strong> : Performance financière solide combinée aux meilleurs scores Impact Social et DFI</li>
             <li><strong>Risque maîtrisé</strong> : Évite les juridictions offshore à fort risque réputationnel</li>
         </ul>
     </div>
@@ -1678,29 +1708,13 @@ export class HtmlReportGenerator {
             <th>Total An 1</th>
             <th>Ratio D/E</th>
         </tr>
-        <tr style="background-color: #dcfce7;">
-            <td><strong>Paris</strong></td>
-            <td><strong>0.95 M€</strong></td>
-            <td>4.26 M€</td>
-            <td>2.60 M€</td>
-            <td><strong>6.87 M€</strong></td>
-            <td>6.25x</td>
-        </tr>
         <tr>
-            <td>Genève</td>
-            <td>0.89 M€</td>
-            <td>3.72 M€</td>
-            <td>2.60 M€</td>
-            <td>6.32 M€</td>
-            <td>6.08x</td>
-        </tr>
-        <tr>
-            <td>Amsterdam</td>
-            <td>0.87 M€</td>
-            <td>3.63 M€</td>
-            <td>2.54 M€</td>
-            <td>6.17 M€</td>
-            <td>6.09x</td>
+            <td>Singapour</td>
+            <td>0.81 M€</td>
+            <td>3.08 M€</td>
+            <td>2.49 M€</td>
+            <td>5.56 M€</td>
+            <td>5.91x</td>
         </tr>
         <tr>
             <td>Londres</td>
@@ -1711,12 +1725,44 @@ export class HtmlReportGenerator {
             <td>4.84x</td>
         </tr>
         <tr>
-            <td>Singapour</td>
-            <td>0.81 M€</td>
-            <td>3.08 M€</td>
-            <td>2.49 M€</td>
-            <td>5.56 M€</td>
-            <td>5.91x</td>
+            <td>Amsterdam</td>
+            <td>0.87 M€</td>
+            <td>3.63 M€</td>
+            <td>2.54 M€</td>
+            <td>6.17 M€</td>
+            <td>6.09x</td>
+        </tr>
+        <tr>
+            <td><strong>Zoug</strong></td>
+            <td><strong>1.25 M€</strong></td>
+            <td><strong>3.68 M€</strong></td>
+            <td><strong>2.60 M€</strong></td>
+            <td><strong>6.28 M€</strong></td>
+            <td><strong>6.15x</strong></td>
+        </tr>
+        <tr>
+            <td>Genève</td>
+            <td>0.89 M€</td>
+            <td>3.72 M€</td>
+            <td>2.60 M€</td>
+            <td>6.32 M€</td>
+            <td>6.08x</td>
+        </tr>
+        <tr>
+            <td>Hambourg</td>
+            <td>0.93 M€</td>
+            <td>4.03 M€</td>
+            <td>2.60 M€</td>
+            <td>6.63 M€</td>
+            <td>6.18x</td>
+        </tr>
+        <tr style="background-color: #dcfce7;">
+            <td><strong>Paris</strong></td>
+            <td><strong>0.95 M€</strong></td>
+            <td>4.26 M€</td>
+            <td>2.60 M€</td>
+            <td><strong>6.87 M€</strong></td>
+            <td>6.25x</td>
         </tr>
     </table>
     
@@ -1750,6 +1796,13 @@ export class HtmlReportGenerator {
             <td>9/10</td>
             <td>FMO</td>
             <td>Institution néerlandaise active</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><strong>Zoug</strong></td>
+            <td><strong>8/10</strong></td>
+            <td><strong>Hub DFI Suisse</strong></td>
+            <td><strong>Accès IFC excellent, proximité Genève</strong></td>
         </tr>
         <tr>
             <td>4</td>
@@ -1974,11 +2027,11 @@ export class HtmlReportGenerator {
     <div class="highlight-box">
         <h3>Pondération des critères</h3>
         <ul>
-            <li><strong>Réglementation</strong> : 25% (Conformité indispensable)</li>
-            <li><strong>Impact Social</strong> : 22% (Mission Neskao)</li>
-            <li><strong>ROI</strong> : 20% (Viabilité financière)</li>
-            <li><strong>Financement DFI</strong> : 18% (Accès capital patient)</li>
-            <li><strong>Cash Management</strong> : 15% (Optimisation trésorerie)</li>
+            <li><strong>Réglementation</strong> : 15% (Conformité indispensable)</li>
+            <li><strong>Impact Social</strong> : 30% (Mission Neskao)</li>
+            <li><strong>ROI</strong> : 15% (Viabilité financière)</li>
+            <li><strong>Financement DFI</strong> : 10% (Accès capital patient)</li>
+            <li><strong>Cash Flow</strong> : 30% (Optimisation trésorerie)</li>
         </ul>
     </div>
     
@@ -2000,169 +2053,157 @@ export class HtmlReportGenerator {
         <tr style="background-color: #dcfce7;">
             <td>1</td>
             <td><strong>Paris</strong></td>
-            <td>GO</td>
-            <td>10.00</td>
-            <td>8.50</td>
-            <td>5.46</td>
-            <td>10.00</td>
-            <td>6.66</td>
+            <td>RECOMMANDÉ</td>
+            <td>10.0</td>
+            <td>8.5</td>
+            <td>7.8</td>
+            <td>10.0</td>
+            <td>6.2</td>
             <td><strong>8.08</strong></td>
             <td><span class="badge badge-success">RECOMMANDÉ</span></td>
         </tr>
         <tr style="background-color: #fef3c7;">
             <td>2</td>
-            <td>Singapour</td>
+            <td><strong>Singapour</strong></td>
             <td>POSSIBLE</td>
-            <td>8.00</td>
-            <td>6.10</td>
-            <td>10.00</td>
-            <td>8.00</td>
-            <td>9.10</td>
-            <td>8.06</td>
+            <td>8.0</td>
+            <td>6.1</td>
+            <td>10.0</td>
+            <td>8.0</td>
+            <td>9.1</td>
+            <td><strong>8.06</strong></td>
             <td><span class="badge badge-warning">POSSIBLE</span></td>
         </tr>
         <tr style="background-color: #dcfce7;">
             <td>3</td>
-            <td>Genève</td>
+            <td><strong>Genève</strong></td>
             <td>RECOMMANDÉ</td>
-            <td>10.00</td>
-            <td>7.90</td>
-            <td>7.70</td>
-            <td>10.00</td>
-            <td>6.10</td>
-            <td>7.86</td>
+            <td>10.0</td>
+            <td>7.9</td>
+            <td>7.7</td>
+            <td>10.0</td>
+            <td>6.1</td>
+            <td><strong>7.99</strong></td>
             <td><span class="badge badge-success">RECOMMANDÉ</span></td>
         </tr>
-        <tr style="background-color: #fef3c7;">
+        <tr style="background-color: #dcfce7;">
             <td>4</td>
-            <td>Amsterdam</td>
-            <td>POSSIBLE</td>
-            <td>10.00</td>
-            <td>7.80</td>
-            <td>7.50</td>
-            <td>9.00</td>
-            <td>6.30</td>
-            <td>7.67</td>
-            <td><span class="badge badge-warning">POSSIBLE</span></td>
-        </tr>
-        <tr style="background-color: #fef3c7;">
-            <td>5</td>
-            <td>Chypre</td>
-            <td>POSSIBLE</td>
-            <td>8.00</td>
-            <td>6.30</td>
-            <td>9.20</td>
-            <td>9.00</td>
-            <td>6.80</td>
-            <td>7.41</td>
-            <td><span class="badge badge-warning">POSSIBLE</span></td>
+            <td><strong>Amsterdam</strong></td>
+            <td>RECOMMANDÉ</td>
+            <td>10.0</td>
+            <td>7.8</td>
+            <td>7.5</td>
+            <td>9.0</td>
+            <td>6.3</td>
+            <td><strong>7.98</strong></td>
+            <td><span class="badge badge-success">RECOMMANDÉ</span></td>
         </tr>
         <tr style="background-color: #dcfce7;">
-            <td>6</td>
+            <td>5</td>
             <td><strong>Zoug</strong></td>
             <td>RECOMMANDÉ</td>
-            <td>9.50</td>
-            <td>6.70</td>
-            <td>6.50</td>
-            <td>8.00</td>
-            <td>7.20</td>
+            <td>9.5</td>
+            <td>6.7</td>
+            <td>6.5</td>
+            <td>8.0</td>
+            <td>7.2</td>
             <td><strong>7.37</strong></td>
             <td><span class="badge badge-success">RECOMMANDÉ</span></td>
         </tr>
         <tr style="background-color: #fef3c7;">
-            <td>7</td>
-            <td>Londres</td>
+            <td>6</td>
+            <td>Hambourg</td>
             <td>POSSIBLE</td>
-            <td>8.00</td>
-            <td>7.60</td>
-            <td>3.34</td>
-            <td>8.00</td>
-            <td>6.47</td>
-            <td>6.72</td>
+            <td>10.0</td>
+            <td>6.8</td>
+            <td>6.8</td>
+            <td>6.0</td>
+            <td>6.0</td>
+            <td>7.32</td>
+            <td><span class="badge badge-warning">POSSIBLE</span></td>
+        </tr>
+        <tr style="background-color: #fef3c7;">
+            <td>7</td>
+            <td>Chypre</td>
+            <td>POSSIBLE</td>
+            <td>8.0</td>
+            <td>6.3</td>
+            <td>9.2</td>
+            <td>9.0</td>
+            <td>6.8</td>
+            <td>7.14</td>
             <td><span class="badge badge-warning">POSSIBLE</span></td>
         </tr>
         <tr style="background-color: #fef3c7;">
             <td>8</td>
-            <td>Hambourg</td>
+            <td>Londres</td>
             <td>POSSIBLE</td>
-            <td>10.00</td>
-            <td>6.75</td>
-            <td>4.19</td>
-            <td>6.00</td>
-            <td>6.74</td>
-            <td>6.78</td>
+            <td>8.0</td>
+            <td>7.6</td>
+            <td>5.9</td>
+            <td>8.0</td>
+            <td>5.8</td>
+            <td>7.06</td>
+            <td><span class="badge badge-warning">POSSIBLE</span></td>
+        </tr>
+        <tr style="background-color: #fef3c7;">
+            <td>9</td>
+            <td>Dubai</td>
+            <td>POSSIBLE</td>
+            <td>7.0</td>
+            <td>5.1</td>
+            <td>8.7</td>
+            <td>4.0</td>
+            <td>7.2</td>
+            <td>6.50</td>
             <td><span class="badge badge-warning">POSSIBLE</span></td>
         </tr>
         <tr style="background-color: #fee2e2;">
-            <td>12</td>
-            <td>Maroc CFC</td>
-            <td>NO</td>
-            <td>3.00</td>
-            <td>8.60</td>
-            <td>1.00</td>
-            <td>2.00</td>
-            <td>1.50</td>
-            <td>2.95</td>
-            <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
-        </tr>
-        <tr style="background-color: #fee2e2;">
-            <td>8</td>
-            <td>Maurice</td>
-            <td>NO</td>
-            <td>8.00</td>
-            <td>7.50</td>
-            <td>2.00</td>
-            <td>7.00</td>
-            <td>3.80</td>
-            <td>5.62</td>
-            <td><span class="badge badge-danger">DÉCONSEILLÉ</span></td>
-        </tr>
-        <tr style="background-color: #fee2e2;">
-            <td>9</td>
-            <td>Andorre</td>
-            <td>NO</td>
-            <td>6.00</td>
-            <td>3.40</td>
-            <td>2.50</td>
-            <td>2.00</td>
-            <td>5.80</td>
-            <td>4.20</td>
-            <td><span class="badge badge-danger">DÉCONSEILLÉ</span></td>
-        </tr>
-        <tr style="background-color: #fee2e2;">
             <td>10</td>
-            <td>Dubai</td>
-            <td>NO</td>
-            <td>7.00</td>
-            <td>5.10</td>
-            <td>1.50</td>
-            <td>4.00</td>
-            <td>3.00</td>
-            <td>3.85</td>
+            <td>Maroc CFC</td>
+            <td>NON RECOMMANDÉ</td>
+            <td>7.0</td>
+            <td>8.6</td>
+            <td>6.8</td>
+            <td>5.0</td>
+            <td>4.2</td>
+            <td>6.91</td>
             <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
         </tr>
         <tr style="background-color: #fee2e2;">
             <td>11</td>
             <td>Tel Aviv</td>
-            <td>NO</td>
-            <td>8.00</td>
-            <td>4.50</td>
-            <td>1.00</td>
-            <td>5.00</td>
-            <td>2.50</td>
-            <td>3.20</td>
+            <td>NON RECOMMANDÉ</td>
+            <td>8.0</td>
+            <td>6.5</td>
+            <td>5.4</td>
+            <td>5.0</td>
+            <td>5.9</td>
+            <td>6.58</td>
             <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
         </tr>
         <tr style="background-color: #fee2e2;">
             <td>12</td>
-            <td>Maroc CFC</td>
-            <td>NO</td>
-            <td>3.00</td>
-            <td>8.60</td>
-            <td>1.00</td>
-            <td>2.00</td>
-            <td>1.50</td>
-            <td>2.95</td>
+            <td>Maurice</td>
+            <td>NON RECOMMANDÉ</td>
+            <td>8.0</td>
+            <td>7.5</td>
+            <td>6.2</td>
+            <td>7.0</td>
+            <td>3.8</td>
+            <td>6.56</td>
+            <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
+        </tr>
+        <tr style="background-color: #fee2e2;">
+            <td>13</td>
+            <td>Andorre</td>
+            <td>NON RECOMMANDÉ</td>
+            <td>6.0</td>
+            <td>3.4</td>
+            <td>8.5</td>
+            <td>2.0</td>
+            <td>5.8</td>
+            <td>5.23</td>
             <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
         </tr>
     </table>
@@ -2178,15 +2219,15 @@ export class HtmlReportGenerator {
         </tr>
         <tr>
             <td>Volume An1 (tonnes)</td>
-            <td>3,245</td>
-            <td>3,245</td>
-            <td>3,245</td>
+            <td>2,950</td>
+            <td>2,950</td>
+            <td>2,950</td>
         </tr>
         <tr>
             <td>CA An1 (M€)</td>
-            <td>54.18</td>
-            <td>54.18</td>
-            <td>54.18</td>
+            <td>27.08</td>
+            <td>27.08</td>
+            <td>27.08</td>
         </tr>
         <tr>
             <td>SG&A An1 (M€)</td>
