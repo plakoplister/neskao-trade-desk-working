@@ -61,7 +61,7 @@ const AnalyseDecisionnelle: React.FC = () => {
       risques: 'Impact social faible, accès DFI limité'
     },
     {
-      rang: 4, ville: 'Andorre', flag: '🇦🇩',
+      rang: 7, ville: 'Andorre', flag: '🇦🇩',
       ebitdaAn1: 0.38, equityAn1: 2.88, sgaTonne: 55, resultatsCumules: 5.39,
       scoreReglementation: 6.0, scoreImpactSocial: 3.4, scoreROI: 8.5, scoreDFI: 2.0, scoreCashFlow: 5.8,
       scoreFinal: 5.23, statut: 'NON RECOMMANDÉ', decision: 'NON RECOMMANDÉ',
@@ -69,7 +69,7 @@ const AnalyseDecisionnelle: React.FC = () => {
       risques: 'Isolement total, pas d\'écosystème'
     },
     {
-      rang: 5, ville: 'Paris', flag: '🇫🇷',
+      rang: 4, ville: 'Paris', flag: '🇫🇷',
       ebitdaAn1: 0.12, equityAn1: 0.95, sgaTonne: 60, resultatsCumules: 5.14,
       scoreReglementation: 10.0, scoreImpactSocial: 8.5, scoreROI: 7.8, scoreDFI: 10.0, scoreCashFlow: 6.2,
       scoreFinal: 8.09, statut: 'RECOMMANDÉ', decision: 'RECOMMANDÉ',
@@ -85,10 +85,18 @@ const AnalyseDecisionnelle: React.FC = () => {
       risques: 'Coûts prohibitifs, élitisme'
     },
     {
-      rang: 7, ville: 'Amsterdam', flag: '🇳🇱',
+      rang: 5, ville: 'Zoug', flag: '🇨🇭',
+      ebitdaAn1: -0.301, equityAn1: 1.25, sgaTonne: 123, resultatsCumules: 5.29,
+      scoreReglementation: 9.5, scoreImpactSocial: 6.7, scoreROI: 6.5, scoreDFI: 8.0, scoreCashFlow: 7.2,
+      scoreFinal: 7.95, statut: 'RECOMMANDÉ', decision: 'RECOMMANDÉ',
+      forces: 'Fiscalité optimale 11.85%, hub trading mondial, transparence suisse',
+      risques: 'Coûts SG&A élevés, EBITDA An1 négatif, distance culturelle CI'
+    },
+    {
+      rang: 6, ville: 'Amsterdam', flag: '🇳🇱',
       ebitdaAn1: 0.04, equityAn1: 0.87, sgaTonne: 69, resultatsCumules: 4.82,
       scoreReglementation: 10.0, scoreImpactSocial: 7.8, scoreROI: 7.5, scoreDFI: 9.0, scoreCashFlow: 6.3,
-      scoreFinal: 7.98, statut: 'POSSIBLE', decision: 'POSSIBLE',
+      scoreFinal: 7.98, statut: 'RECOMMANDÉ', decision: 'RECOMMANDÉ',
       forces: 'Port #1 cacao Europe, innovation ESG',
       risques: 'Barrière linguistique, distance culturelle'
     },
@@ -273,10 +281,10 @@ const AnalyseDecisionnelle: React.FC = () => {
               <tbody>
                 {villesAvecScoresRecalcules.map((ville, index) => (
                   <tr key={ville.ville} className={`${
-                    index < 3 ? 'bg-teal-50/30' :
-                    index < 7 ? 'bg-sky-50/30' :
-                    index < 10 ? 'bg-gray-100' :
-                    'bg-rose-50/30'
+                    ville.statut === 'RECOMMANDÉ' ? 'bg-green-50/40' :
+                    ville.statut === 'POSSIBLE' ? 'bg-blue-50/40' :
+                    ville.statut === 'NON RECOMMANDÉ' ? 'bg-red-50/40' :
+                    'bg-gray-50'
                   }`}>
                     <td className="border p-2 text-center font-bold text-lg">
                       {index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : index + 1}

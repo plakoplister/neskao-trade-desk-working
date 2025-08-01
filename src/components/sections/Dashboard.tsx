@@ -14,6 +14,7 @@ const Dashboard: React.FC = () => {
     { ville: 'Paris', an1: { total: 6.87 } },
     { ville: 'Singapour', an1: { total: 5.56 } },
     { ville: 'Genève', an1: { total: 6.32 } },
+    { ville: 'Zoug', an1: { total: 7.85 } },
     { ville: 'Amsterdam', an1: { total: 6.17 } },
     { ville: 'Chypre', an1: { total: 8.43 } },
     { ville: 'Hambourg', an1: { total: 6.63 } },
@@ -68,9 +69,9 @@ const Dashboard: React.FC = () => {
       nom: 'Amsterdam',
       ebitdaAn1: 0.04,
       capitalInitial: 0.87,
-      scoreGeneral: 7.67,
-      statut: 'POSSIBLE',
-      color: 'bg-sky-50/30 border-sky-300 text-sky-700',
+      scoreGeneral: 7.76,
+      statut: 'RECOMMANDÉ',
+      color: 'bg-teal-50/30 border-teal-300 text-teal-700',
       flag: '🇳🇱'
     },
     {
@@ -83,10 +84,19 @@ const Dashboard: React.FC = () => {
       flag: '🇨🇾'
     },
     {
+      nom: 'Zoug',
+      ebitdaAn1: -0.301,
+      capitalInitial: 1.25,
+      scoreGeneral: 7.37,
+      statut: 'RECOMMANDÉ',
+      color: 'bg-teal-50/30 border-teal-300 text-teal-700',
+      flag: '🇨🇭'
+    },
+    {
       nom: 'Hambourg',
       ebitdaAn1: 0.05,
       capitalInitial: 0.93,
-      scoreGeneral: 7.32,
+      scoreGeneral: 6.96,
       statut: 'POSSIBLE',
       color: 'bg-sky-50/30 border-sky-300 text-sky-700',
       flag: '🇩🇪'
@@ -159,6 +169,11 @@ const Dashboard: React.FC = () => {
       an2: { ca: 66.29, margeTrading: 2.13, sgaCosts: 0.90, ebitda: 1.23, resultatNet: 0.34 },
       an3: { ca: 151.72, margeTrading: 7.70, sgaCosts: 1.16, ebitda: 6.54, resultatNet: 5.12 }
     },
+    Zoug: {
+      an1: { ca: 27.08, margeTrading: 0.89, sgaCosts: 1.189, ebitda: -0.301, resultatNet: -0.62 },
+      an2: { ca: 66.29, margeTrading: 2.13, sgaCosts: 1.092, ebitda: 1.034, resultatNet: 0.68 },
+      an3: { ca: 151.72, margeTrading: 7.70, sgaCosts: 1.406, ebitda: 6.292, resultatNet: 5.23 }
+    },
     Amsterdam: {
       an1: { ca: 27.08, margeTrading: 0.89, sgaCosts: 0.80, ebitda: 0.04, resultatNet: -0.48 },
       an2: { ca: 66.29, margeTrading: 2.13, sgaCosts: 0.79, ebitda: 1.34, resultatNet: 0.43 },
@@ -223,6 +238,11 @@ const Dashboard: React.FC = () => {
       an2: { personnel: 553, bureaux: 52, itSystemes: 153, compliance: 88, voyages: 41, setup: 0, total: 901 },
       an3: { personnel: 709, bureaux: 60, itSystemes: 194, compliance: 141, voyages: 53, setup: 0, total: 1157 }
     },
+    Zoug: {
+      an1: { personnel: 950, bureaux: 110, itSystemes: 125, compliance: 100, voyages: 180, setup: 400, total: 1985 },
+      an2: { personnel: 1080, bureaux: 125, itSystemes: 155, compliance: 120, voyages: 200, setup: 0, total: 1820 },
+      an3: { personnel: 1380, bureaux: 145, itSystemes: 195, compliance: 180, voyages: 240, setup: 0, total: 2320 }
+    },
     Amsterdam: {
       an1: { personnel: 416, bureaux: 52, itSystemes: 123, compliance: 51, voyages: 33, setup: 128, total: 803 },
       an2: { personnel: 475, bureaux: 56, itSystemes: 153, compliance: 70, voyages: 37, setup: 0, total: 791 },
@@ -286,6 +306,11 @@ const Dashboard: React.FC = () => {
       an1: { total: 6.32, equity: 0.89, dette: 5.43, coutTotal: 0.37 },
       an2: { total: 14.60, equity: 2.06, dette: 12.54, coutTotal: 0.84 },
       an3: { total: 23.84, equity: 3.37, dette: 20.48, coutTotal: 1.37 }
+    },
+    Zoug: {
+      an1: { total: 7.85, equity: 2.5, dette: 5.35, coutTotal: 0.42 },
+      an2: { total: 17.25, equity: 4.6, dette: 12.65, coutTotal: 0.89 },
+      an3: { total: 28.15, equity: 7.32, dette: 20.83, coutTotal: 1.58 }
     },
     Amsterdam: {
       an1: { total: 6.17, equity: 0.87, dette: 5.30, coutTotal: 0.37 },
@@ -356,6 +381,14 @@ const Dashboard: React.FC = () => {
       emploisLocaux: 580,
       formationCI: 'Élevée',
       transparence: 'Très élevée'
+    },
+    Zoug: {
+      proximiteCI: 'Moyenne',
+      scoreESG: 7.0,
+      projetsImpact: 5,
+      emploisLocaux: 420,
+      formationCI: 'Moyenne',
+      transparence: 'Élevée'
     },
     Amsterdam: {
       proximiteCI: 'Moyenne',

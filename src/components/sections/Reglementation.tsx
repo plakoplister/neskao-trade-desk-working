@@ -4,13 +4,13 @@ import { CheckCircle2, XCircle, AlertCircle, Shield, Globe, Building2, FileText,
 import { RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 
 /**
- * Reglementation component providing comprehensive regulatory analysis for all 12 locations
+ * Reglementation component providing comprehensive regulatory analysis for all 13 locations
  * Includes detailed comparison tables, compliance requirements, and trading regulations
  */
 const Reglementation: React.FC = () => {
   const [activeTab, setActiveTab] = useState('general');
 
-  // Données complètes des 12 localités avec Chypre
+  // Données complètes des 13 localités avec Chypre et Zoug
   const localisationsCompletes = [
     {
       ville: 'Paris',
@@ -42,6 +42,22 @@ const Reglementation: React.FC = () => {
       avantagesSpeciaux: 'Statut auxiliaire possible',
       forces: ['Hub mondial développement durable', 'Standards suisses reconnus', 'Convention fiscale CI active'],
       faiblesses: ['Coûts opérationnels très élevés', 'Personnel: 1,045K USD/an'],
+      zone: 'Europe'
+    },
+    {
+      ville: 'Zoug',
+      flag: '🇨🇭',
+      scoreReg: 9.5,
+      tradingAutorises: 'OUI',
+      conventionCI: 'OUI',
+      conventionPrixTransfert: 'OUI',
+      restrictions: 'AUCUNE',
+      tauxIS: '11.85%',
+      capitalMinimum: '8M CHF',
+      statut: 'ALTERNATIVE',
+      avantagesSpeciaux: 'Pas d\'impôt sur le capital',
+      forces: ['Taux effectif le plus bas de Suisse', 'Épicentre trading commodities', '35% pétrole mondial transite'],
+      faiblesses: ['Coûts prohibitifs', 'Image trading agressif', 'Guerre des talents'],
       zone: 'Europe'
     },
     {

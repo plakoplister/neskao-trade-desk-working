@@ -32,6 +32,18 @@ const Financement: React.FC = () => {
       ratioDE: 6.08
     },
     { 
+      ville: 'Zoug', 
+      forwardBuffer: 50, 
+      forwardEquity: 20,
+      forwardDebt: 90,
+      forwardTaux: 6.4,
+      futuresBuffer: 15, 
+      futuresEquity: 20,
+      futuresDebt: 80,
+      futuresTaux: 6.9,
+      ratioDE: 6.15
+    },
+    { 
       ville: 'Amsterdam', 
       forwardBuffer: 48, 
       forwardEquity: 22,
@@ -156,78 +168,85 @@ const Financement: React.FC = () => {
   // Données de financement détaillé extraites du fichier
   const financementDetailData = [
     {
-      ville: 'Paris',
-      ranking: 5,
-      an1: { forward: 4.26, futures: 2.60, equity: 0.95, dette: 5.92, frais: 0.43, total: 6.87 },
-      an2: { forward: 9.84, futures: 6.01, equity: 2.19, dette: 13.66, frais: 0.98, total: 15.85 },
-      an3: { forward: 16.07, futures: 9.81, equity: 3.57, dette: 22.32, frais: 1.60, total: 25.89 }
-    },
-    {
-      ville: 'Genève',
-      ranking: 3,
-      an1: { forward: 3.72, futures: 2.60, equity: 0.89, dette: 5.43, frais: 0.37, total: 6.32 },
-      an2: { forward: 8.59, futures: 6.01, equity: 2.06, dette: 12.54, frais: 0.84, total: 14.60 },
-      an3: { forward: 14.03, futures: 9.81, equity: 3.37, dette: 20.48, frais: 1.37, total: 23.84 }
-    },
-    {
-      ville: 'Amsterdam',
-      ranking: 2,
-      an1: { forward: 3.63, futures: 2.54, equity: 0.87, dette: 5.30, frais: 0.37, total: 6.17 },
-      an2: { forward: 8.38, futures: 5.85, equity: 2.01, dette: 12.22, frais: 0.86, total: 14.23 },
-      an3: { forward: 13.69, futures: 9.56, equity: 3.28, dette: 19.97, frais: 1.40, total: 23.25 }
-    },
-    {
       ville: 'Londres',
-      ranking: 6,
+      ranking: 2,
       an1: { forward: 3.35, futures: 2.49, equity: 1.00, dette: 4.84, frais: 0.32, total: 5.84 },
       an2: { forward: 7.73, futures: 5.75, equity: 2.31, dette: 11.17, frais: 0.73, total: 13.48 },
       an3: { forward: 12.63, futures: 9.39, equity: 3.77, dette: 18.24, frais: 1.19, total: 22.01 }
     },
     {
-      ville: 'Hambourg',
+      ville: 'Amsterdam',
+      ranking: 3,
+      an1: { forward: 3.63, futures: 2.54, equity: 0.87, dette: 5.30, frais: 0.37, total: 6.17 },
+      an2: { forward: 8.38, futures: 5.85, equity: 2.01, dette: 12.22, frais: 0.86, total: 14.23 },
+      an3: { forward: 13.69, futures: 9.56, equity: 3.28, dette: 19.97, frais: 1.40, total: 23.25 }
+    },
+    {
+      ville: 'Zoug',
       ranking: 4,
+      an1: { forward: 3.68, futures: 2.60, equity: 1.25, dette: 5.03, frais: 0.35, total: 6.28 },
+      an2: { forward: 8.49, futures: 6.01, equity: 2.89, dette: 11.62, frais: 0.81, total: 14.50 },
+      an3: { forward: 13.87, futures: 9.81, equity: 4.72, dette: 18.96, frais: 1.32, total: 23.68 }
+    },
+    {
+      ville: 'Genève',
+      ranking: 5,
+      an1: { forward: 3.72, futures: 2.60, equity: 0.89, dette: 5.43, frais: 0.37, total: 6.32 },
+      an2: { forward: 8.59, futures: 6.01, equity: 2.06, dette: 12.54, frais: 0.84, total: 14.60 },
+      an3: { forward: 14.03, futures: 9.81, equity: 3.37, dette: 20.48, frais: 1.37, total: 23.84 }
+    },
+    {
+      ville: 'Hambourg',
+      ranking: 6,
       an1: { forward: 4.03, futures: 2.60, equity: 0.93, dette: 5.71, frais: 0.41, total: 6.63 },
       an2: { forward: 9.30, futures: 6.01, equity: 2.13, dette: 13.18, frais: 0.94, total: 15.31 },
       an3: { forward: 15.20, futures: 9.81, equity: 3.48, dette: 21.53, frais: 1.53, total: 25.01 }
     },
     {
+      ville: 'Paris',
+      ranking: 7,
+      an1: { forward: 4.26, futures: 2.60, equity: 0.95, dette: 5.92, frais: 0.43, total: 6.87 },
+      an2: { forward: 9.84, futures: 6.01, equity: 2.19, dette: 13.66, frais: 0.98, total: 15.85 },
+      an3: { forward: 16.07, futures: 9.81, equity: 3.57, dette: 22.32, frais: 1.60, total: 25.89 }
+    },
+    {
       ville: 'Andorre',
-      ranking: 9,
+      ranking: 10,
       an1: { forward: 5.44, futures: 3.11, equity: 1.44, dette: 7.12, frais: 0.58, total: 8.55 },
       an2: { forward: 12.56, futures: 7.18, equity: 3.32, dette: 16.42, frais: 1.34, total: 19.74 },
       an3: { forward: 20.52, futures: 11.73, equity: 5.43, dette: 26.82, frais: 2.20, total: 32.25 }
     },
     {
       ville: 'Chypre',
-      ranking: 8,
+      ranking: 9,
       an1: { forward: 5.44, futures: 2.99, equity: 1.57, dette: 6.87, frais: 0.49, total: 8.43 },
       an2: { forward: 12.56, futures: 6.90, equity: 3.61, dette: 15.85, frais: 1.14, total: 19.45 },
       an3: { forward: 20.52, futures: 11.27, equity: 5.90, dette: 25.89, frais: 1.86, total: 31.78 }
     },
     {
       ville: 'Maurice',
-      ranking: 10,
+      ranking: 11,
       an1: { forward: 6.03, futures: 3.39, equity: 1.88, dette: 7.53, frais: 0.62, total: 9.41 },
       an2: { forward: 13.91, futures: 7.81, equity: 4.35, dette: 17.38, frais: 1.42, total: 21.72 },
       an3: { forward: 22.72, futures: 12.76, equity: 7.10, dette: 28.38, frais: 2.32, total: 35.48 }
     },
     {
       ville: 'Maroc CFC',
-      ranking: 11,
+      ranking: 12,
       an1: { forward: 7.38, futures: 3.96, equity: 2.84, dette: 8.51, frais: 0.66, total: 11.34 },
       an2: { forward: 17.03, futures: 9.14, equity: 6.55, dette: 19.63, frais: 1.51, total: 26.17 },
       an3: { forward: 27.82, futures: 14.93, equity: 10.69, dette: 32.06, frais: 2.46, total: 42.75 }
     },
     {
       ville: 'Dubai',
-      ranking: 7,
+      ranking: 8,
       an1: { forward: 4.84, futures: 2.85, equity: 1.30, dette: 6.39, frais: 0.43, total: 7.69 },
       an2: { forward: 11.16, futures: 6.58, equity: 2.99, dette: 14.76, frais: 0.99, total: 17.75 },
       an3: { forward: 18.24, futures: 10.75, equity: 4.89, dette: 24.10, frais: 1.61, total: 28.99 }
     },
     {
       ville: 'Tel Aviv',
-      ranking: 12,
+      ranking: 13,
       an1: { forward: 4.61, futures: 2.67, equity: 1.09, dette: 6.19, frais: 0.45, total: 7.28 },
       an2: { forward: 10.63, futures: 6.17, equity: 2.51, dette: 14.28, frais: 1.05, total: 16.79 },
       an3: { forward: 17.36, futures: 10.07, equity: 4.10, dette: 23.33, frais: 1.71, total: 27.43 }
@@ -245,6 +264,7 @@ const Financement: React.FC = () => {
   const scoreDFI = {
     'Paris': { score: 10, afd: 'EXCELLENT', fmo: 'BON', bii: 'MOYEN', ifc: 'BON', enabel: 'EXCELLENT', oiko: 'EXCELLENT' },
     'Genève': { score: 10, afd: 'EXCELLENT', fmo: 'BON', bii: 'BON', ifc: 'EXCELLENT', enabel: 'EXCELLENT', oiko: 'EXCELLENT' },
+    'Zoug': { score: 8, afd: 'BON', fmo: 'BON', bii: 'BON', ifc: 'EXCELLENT', enabel: 'BON', oiko: 'BON' },
     'Amsterdam': { score: 9, afd: 'BON', fmo: 'EXCELLENT', bii: 'BON', ifc: 'BON', enabel: 'EXCELLENT', oiko: 'EXCELLENT' },
     'Londres': { score: 8, afd: 'BON', fmo: 'BON', bii: 'EXCELLENT', ifc: 'EXCELLENT', enabel: 'BON', oiko: 'BON' },
     'Hambourg': { score: 6, afd: 'MOYEN', fmo: 'BON', bii: 'MOYEN', ifc: 'BON', enabel: 'MOYEN', oiko: 'MOYEN' },

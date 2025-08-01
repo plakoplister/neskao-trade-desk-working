@@ -5,10 +5,11 @@ import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, L
 const Rentabilite: React.FC = () => {
   const [activeTab, setActiveTab] = useState('pl-details');
 
-  // Données EBITDA pour toutes les villes incluant Chypre - DONNÉES RÉELLES (en millions EUR)
+  // Données EBITDA pour toutes les villes incluant Chypre et Zoug - DONNÉES RÉELLES (en millions EUR)
   const ebitdaData = [
     { ville: 'Paris', an1: 0.12, an2: 1.40, an3: 6.81, roi3ans: 543.2, totalResNet: 5.17, cashReqis: 0.95 },
     { ville: 'Genève', an1: -0.09, an2: 1.23, an3: 6.54, roi3ans: 570.8, totalResNet: 4.95, cashReqis: 0.89 },
+    { ville: 'Zoug', an1: -0.301, an2: 1.034, an3: 6.292, roi3ans: 468.5, totalResNet: 5.29, cashReqis: 1.25 },
     { ville: 'Amsterdam', an1: 0.04, an2: 1.34, an3: 6.68, roi3ans: 595.4, totalResNet: 5.18, cashReqis: 0.87 },
     { ville: 'Londres', an1: -0.34, an2: 1.09, an3: 6.37, roi3ans: 473.0, totalResNet: 4.73, cashReqis: 1.00 },
     { ville: 'Hambourg', an1: 0.05, an2: 1.38, an3: 6.72, roi3ans: 547.3, totalResNet: 5.07, cashReqis: 0.93 },
@@ -44,6 +45,17 @@ const Rentabilite: React.FC = () => {
       ebitda: { an1: -0.09, an2: 1.23, an3: 6.54 },
       resultatNet: { an1: -0.51, an2: 0.34, an3: 5.12 },
       fiscalite: '15.15%'
+    },
+    {
+      ville: 'Zoug',
+      ca: { an1: 27.08, an2: 66.29, an3: 151.72 },
+      margeTrading: { an1: 0.534, an2: 1.309, an3: 2.939 },
+      gainsFutures: { an1: 0.354, an2: 0.817, an3: 4.759 },
+      totalRevenus: { an1: 0.888, an2: 2.126, an3: 7.698 },
+      totalCharges: { an1: 1.189, an2: 1.092, an3: 1.406 },
+      ebitda: { an1: -0.301, an2: 1.034, an3: 6.292 },
+      resultatNet: { an1: -0.62, an2: 0.68, an3: 5.23 },
+      fiscalite: '11.85%'
     },
     {
       ville: 'Amsterdam',
@@ -177,6 +189,7 @@ const Rentabilite: React.FC = () => {
   const scoresData = [
     { ville: 'Paris', scoreROI: 5.46, scorePondere: 7.87, statut: 'RECOMMANDÉ' },
     { ville: 'Genève', scoreROI: 5.92, scorePondere: 7.81, statut: 'RECOMMANDÉ' },
+    { ville: 'Zoug', scoreROI: 6.5, scorePondere: 7.85, statut: 'RECOMMANDÉ' },
     { ville: 'Amsterdam', scoreROI: 5.61, scorePondere: 7.65, statut: 'RECOMMANDÉ' },
     { ville: 'Singapour', scoreROI: 10.00, scorePondere: 7.49, statut: 'RECOMMANDÉ' },
     { ville: 'Hambourg', scoreROI: 4.19, scorePondere: 6.78, statut: 'POSSIBLE' },
@@ -235,27 +248,30 @@ const Rentabilite: React.FC = () => {
   const evolutionData = [
     { 
       annee: 'An 1', 
-      Paris: 0.52, 
+      Paris: 0.12, 
       Genève: -0.09, 
-      Amsterdam: 0.07,
-      Londres: -0.67,
-      Singapour: 0.02
+      Zoug: -0.301,
+      Amsterdam: 0.04,
+      Londres: -0.34,
+      Singapour: 0.01
     },
     { 
       annee: 'An 2', 
-      Paris: 2.84, 
-      Genève: 2.75, 
-      Amsterdam: 2.56,
-      Londres: 1.86,
-      Singapour: 2.58
+      Paris: 1.40, 
+      Genève: 1.23, 
+      Zoug: 1.034,
+      Amsterdam: 1.34,
+      Londres: 1.09,
+      Singapour: 1.12
     },
     { 
       annee: 'An 3', 
-      Paris: 9.93, 
-      Genève: 9.62, 
-      Amsterdam: 9.40,
-      Londres: 8.47,
-      Singapour: 9.40
+      Paris: 6.81, 
+      Genève: 6.54, 
+      Zoug: 6.292,
+      Amsterdam: 6.68,
+      Londres: 6.37,
+      Singapour: 6.41
     }
   ];
 
@@ -375,6 +391,7 @@ const Rentabilite: React.FC = () => {
                 <Legend />
                 <Line type="monotone" dataKey="Paris" stroke="#10b981" strokeWidth={3} />
                 <Line type="monotone" dataKey="Genève" stroke="#3b82f6" strokeWidth={3} />
+                <Line type="monotone" dataKey="Zoug" stroke="#0ea5e9" strokeWidth={3} />
                 <Line type="monotone" dataKey="Amsterdam" stroke="#f97316" strokeWidth={3} />
                 <Line type="monotone" dataKey="Londres" stroke="#6366f1" strokeWidth={2} strokeDasharray="5 5" />
                 <Line type="monotone" dataKey="Singapour" stroke="#ec4899" strokeWidth={2} strokeDasharray="5 5" />

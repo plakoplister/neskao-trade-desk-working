@@ -30,6 +30,7 @@ export interface SpiderData {
   subject: string;
   Paris: number;
   Genève: number;
+  Zoug?: number;
   Amsterdam: number;
   Singapour?: number;
   Chypre?: number;
@@ -69,6 +70,7 @@ export interface RadarData {
   critere: string;
   Paris: number;
   Genève: number;
+  Zoug?: number;
   Amsterdam: number;
 }
 
@@ -86,6 +88,7 @@ export interface EvolutionData {
   annee: string;
   Paris: number;
   Genève: number;
+  Zoug?: number;
   Amsterdam: number;
   Londres: number;
   Singapour: number;

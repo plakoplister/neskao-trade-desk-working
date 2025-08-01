@@ -5,7 +5,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 const SGA: React.FC = () => {
   const [activeTab, setActiveTab] = useState('resources');
 
-  // Données complètes des 12 localités (incluant Chypre, excluant Genève LCM)
+  // Données complètes des 13 localités (incluant Chypre et Zoug, excluant Genève LCM)
   const villesData = [
     { nom: "Maroc CFC", an1: 412.000, an2: 430.000, an3: 582.000, total: 1424.000, rank: 1, zone: "Zone franche" },
     { nom: "Maurice", an1: 477.000, an2: 492.000, an3: 652.000, total: 1621.000, rank: 2, zone: "Offshore" },
@@ -18,7 +18,8 @@ const SGA: React.FC = () => {
     { nom: "Tel Aviv", an1: 871.000, an2: 829.000, an3: 1090.000, total: 2790.000, rank: 9, zone: "Moyen-Orient" },
     { nom: "Genève", an1: 979.000, an2: 901.000, an3: 1157.000, total: 3037.000, rank: 10, zone: "Europe" },
     { nom: "Singapour", an1: 1053.000, an2: 1005.000, an3: 1286.000, total: 3344.000, rank: 11, zone: "Asie" },
-    { nom: "Londres", an1: 1116.000, an2: 1042.000, an3: 1330.000, total: 3488.000, rank: 12, zone: "Europe" }
+    { nom: "Londres", an1: 1116.000, an2: 1042.000, an3: 1330.000, total: 3488.000, rank: 12, zone: "Europe" },
+    { nom: "Zoug", an1: 1189.000, an2: 1092.000, an3: 1406.000, total: 3687.000, rank: 13, zone: "Europe" }
   ];
 
   // Données ressources humaines
@@ -61,6 +62,16 @@ const SGA: React.FC = () => {
         { titre: "Junior Trader", an1: 0, an2: 0, an3: 0.5, salaire: 200, description: "Support trading et analyse" },
         { titre: "Risk/Compliance", an1: 0.5, an2: 0.5, an3: 0.5, salaire: 140, description: "Conformité UE et gestion risques" },
         { titre: "Finance/Admin", an1: 0.5, an2: 0.5, an3: 0.5, salaire: 90, description: "Administration et comptabilité" }
+      ],
+      totalFTE: { an1: 2, an2: 2.5, an3: 3 }
+    },
+    zoug: {
+      postes: [
+        { titre: "Managing Director", an1: 1, an2: 1, an3: 1, salaire: 380, description: "Direction générale et développement stratégique Suisse/Europe" },
+        { titre: "Head Trader", an1: 0, an2: 0.5, an3: 0.5, salaire: 220, description: "Trading senior commodities et gestion portefeuille" },
+        { titre: "Senior Trader", an1: 0, an2: 0, an3: 0.5, salaire: 260, description: "Spécialiste futures et hedging complexe" },
+        { titre: "Risk Manager", an1: 0.5, an2: 0.5, an3: 0.5, salaire: 180, description: "Gestion risques et conformité FINMA" },
+        { titre: "Finance Director", an1: 0.5, an2: 0.5, an3: 0.5, salaire: 120, description: "Direction financière et optimisation fiscale" }
       ],
       totalFTE: { an1: 2, an2: 2.5, an3: 3 }
     }
@@ -136,6 +147,13 @@ const SGA: React.FC = () => {
         coutM2: 300, 
         setup: 74,
         description: "Zone franche africaine, proximité Afrique de l'Ouest"
+      },
+      { 
+        ville: "Zoug", 
+        quartier: "Zug Business District", 
+        coutM2: 960, 
+        setup: 260,
+        description: "Épicentre mondial trading commodities, fiscalité optimale, prestige maximum"
       }
     ]
   };
@@ -464,8 +482,8 @@ const SGA: React.FC = () => {
           <CardContent>
             <ul className="space-y-2 text-sm">
               <li><strong>1. Maroc CFC:</strong> 1,424k€</li>
-              <li><strong>2. Maurice:</strong> 2,702k€</li>
-              <li><strong>3. Andorre:</strong> 2,874k€</li>
+              <li><strong>2. Maurice:</strong> 1,621k€</li>
+              <li><strong>3. Andorre:</strong> 1,724k€</li>
             </ul>
             <p className="mt-3 text-xs text-teal-700">
               Zones franches avec fiscalité avantageuse mais éloignement des marchés principaux
@@ -480,9 +498,9 @@ const SGA: React.FC = () => {
           <CardContent>
             <ul className="space-y-2 text-sm">
               <li><strong>4. Paris:</strong> 2,392k€</li>
-              <li><strong>5. Hambourg:</strong> 4,186k€</li>
-              <li><strong>6. Chypre:</strong> 4,392k€</li>
-              <li><strong>7. Amsterdam:</strong> 4,354k€</li>
+              <li><strong>5. Hambourg:</strong> 2,513k€</li>
+              <li><strong>6. Chypre:</strong> 2,635k€</li>
+              <li><strong>7. Amsterdam:</strong> 2,612k€</li>
             </ul>
             <p className="mt-3 text-xs text-sky-700">
               Europe avec bon équilibre coût/accès marché et écosystème développé
@@ -496,8 +514,12 @@ const SGA: React.FC = () => {
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
-              <li><strong>8-10. Dubai/Tel Aviv/Genève:</strong> 4.5-5.3M€</li>
-              <li><strong>11-13. Singapour/Londres/Genève LCM:</strong> 5.6-5.8M€</li>
+              <li><strong>8. Dubai:</strong> 2,670k€</li>
+              <li><strong>9. Tel Aviv:</strong> 2,790k€</li>
+              <li><strong>10. Genève:</strong> 3,037k€</li>
+              <li><strong>11. Singapour:</strong> 3,344k€</li>
+              <li><strong>12. Londres:</strong> 3,488k€</li>
+              <li><strong>13. Zoug:</strong> 3,687k€</li>
             </ul>
             <p className="mt-3 text-xs text-rose-700">
               Hubs majeurs avec coûts élevés mais prestige et réseau maximum

@@ -56,6 +56,22 @@ const ImpactSocial: React.FC = () => {
       pointsFaibles: 'Coût, élitisme'
     },
     {
+      ville: 'Zoug',
+      score: 6.7,
+      ranking: 8,
+      region: 'Europe',
+      statut: 'MOYEN',
+      proximiteCI: 5,
+      ecosystemeESG: 8,
+      financementsImpact: 8,
+      emploiFormation: 5,
+      transparenceFiscale: 9,
+      influencePolitique: 6,
+      partenariats: 6,
+      pointsForts: 'Excellence fiscale, innovation fintech',
+      pointsFaibles: 'Distance CI, coûts prohibitifs'
+    },
+    {
       ville: 'Amsterdam',
       score: 7.8,
       ranking: 4,
@@ -122,7 +138,7 @@ const ImpactSocial: React.FC = () => {
     {
       ville: 'Tel Aviv',
       score: 6.5,
-      ranking: 8,
+      ranking: 9,
       region: 'Moyen-Orient',
       statut: 'MOYEN',
       proximiteCI: 5,
@@ -138,7 +154,7 @@ const ImpactSocial: React.FC = () => {
     {
       ville: 'Chypre',
       score: 6.3,
-      ranking: 9,
+      ranking: 10,
       region: 'Europe',
       statut: 'MOYEN',
       proximiteCI: 5,
@@ -154,7 +170,7 @@ const ImpactSocial: React.FC = () => {
     {
       ville: 'Singapour',
       score: 6.1,
-      ranking: 10,
+      ranking: 11,
       region: 'Asie',
       statut: 'MOYEN',
       proximiteCI: 4,
@@ -170,7 +186,7 @@ const ImpactSocial: React.FC = () => {
     {
       ville: 'Dubai',
       score: 5.1,
-      ranking: 11,
+      ranking: 12,
       region: 'Moyen-Orient',
       statut: 'FAIBLE',
       proximiteCI: 5,
@@ -186,7 +202,7 @@ const ImpactSocial: React.FC = () => {
     {
       ville: 'Andorre',
       score: 3.4,
-      ranking: 12,
+      ranking: 13,
       region: 'Europe',
       statut: 'INADAPTÉ',
       proximiteCI: 4,
