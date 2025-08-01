@@ -1,6 +1,6 @@
 {
   "name": "neskao-trade-desk",
-  "version": "2.1.0",
+  "version": "5.0.0",
   "description": "Neskao Trade Desk - Comparative Analysis of Trading Locations",
   "type": "module",
   "scripts": {

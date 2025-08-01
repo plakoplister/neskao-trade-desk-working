@@ -105,16 +105,25 @@ const Dashboard: React.FC = () => {
       nom: 'Londres',
       ebitdaAn1: -0.34,
       capitalInitial: 1.00,
-      scoreGeneral: 7.06,
+      scoreGeneral: 6.90,
       statut: 'POSSIBLE',
       color: 'bg-sky-50/30 border-sky-300 text-sky-700',
       flag: '🇬🇧'
     },
     {
+      nom: 'Dubai',
+      ebitdaAn1: 0.00,
+      capitalInitial: 2.59,
+      scoreGeneral: 6.45,
+      statut: 'POSSIBLE',
+      color: 'bg-sky-50/30 border-sky-300 text-sky-700',
+      flag: '🇦🇪'
+    },
+    {
       nom: 'Maroc CFC',
       ebitdaAn1: 0.47,
       capitalInitial: 5.67,
-      scoreGeneral: 6.91,
+      scoreGeneral: 6.41,
       statut: 'NON RECOMMANDÉ',
       color: 'bg-rose-50/30 border-rose-300 text-rose-700',
       flag: '🇲🇦'
@@ -123,7 +132,7 @@ const Dashboard: React.FC = () => {
       nom: 'Tel Aviv',
       ebitdaAn1: -0.03,
       capitalInitial: 2.17,
-      scoreGeneral: 6.58,
+      scoreGeneral: 6.23,
       statut: 'NON RECOMMANDÉ',
       color: 'bg-rose-50/30 border-rose-300 text-rose-700',
       flag: '🇮🇱'
@@ -132,25 +141,16 @@ const Dashboard: React.FC = () => {
       nom: 'Maurice',
       ebitdaAn1: 0.41,
       capitalInitial: 3.76,
-      scoreGeneral: 6.56,
+      scoreGeneral: 6.22,
       statut: 'NON RECOMMANDÉ',
       color: 'bg-rose-50/30 border-rose-300 text-rose-700',
       flag: '🇲🇺'
     },
     {
-      nom: 'Dubai',
-      ebitdaAn1: 0.00,
-      capitalInitial: 2.59,
-      scoreGeneral: 6.50,
-      statut: 'POSSIBLE',
-      color: 'bg-sky-50/30 border-sky-300 text-sky-700',
-      flag: '🇦🇪'
-    },
-    {
       nom: 'Andorre',
       ebitdaAn1: 0.38,
       capitalInitial: 2.88,
-      scoreGeneral: 5.23,
+      scoreGeneral: 5.13,
       statut: 'NON RECOMMANDÉ',
       color: 'bg-rose-50/30 border-rose-300 text-rose-700',
       flag: '🇦🇩'
