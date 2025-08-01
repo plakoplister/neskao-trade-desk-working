@@ -701,9 +701,10 @@ export class HtmlReportGenerator {
       { name: 'Paris', score: 8.08, ebitda: 0.12, equity: 0.95, status: 'RECOMMANDÉ', color: '#dcfce7' },
       { name: 'Singapour', score: 8.06, ebitda: 0.01, equity: 0.81, status: 'POSSIBLE', color: '#fef3c7' },
       { name: 'Genève', score: 7.86, ebitda: -0.09, equity: 0.89, status: 'RECOMMANDÉ', color: '#dcfce7' },
-      { name: 'Amsterdam', score: 7.67, ebitda: 0.04, equity: 0.87, status: 'POSSIBLE', color: '#fef3c7' },
+      { name: 'Amsterdam', score: 7.76, ebitda: 0.04, equity: 0.87, status: 'RECOMMANDÉ', color: '#dcfce7' },
       { name: 'Chypre', score: 7.41, ebitda: 0.20, equity: 3.13, status: 'POSSIBLE', color: '#fef3c7' },
-      { name: 'Hambourg', score: 7.32, ebitda: 0.05, equity: 0.93, status: 'POSSIBLE', color: '#fef3c7' },
+      { name: 'Zoug', score: 7.37, ebitda: -0.301, equity: 1.25, status: 'RECOMMANDÉ', color: '#dcfce7' },
+      { name: 'Hambourg', score: 6.96, ebitda: 0.05, equity: 0.93, status: 'POSSIBLE', color: '#fef3c7' },
       { name: 'Londres', score: 7.06, ebitda: -0.34, equity: 1.00, status: 'POSSIBLE', color: '#fef3c7' },
       { name: 'Dubai', score: 6.50, ebitda: 0.00, equity: 2.59, status: 'POSSIBLE', color: '#fef3c7' },
       { name: 'Maurice', score: 6.26, ebitda: 0.41, equity: 3.76, status: 'NON RECOMMANDÉ', color: '#fee2e2' },
@@ -1184,10 +1185,12 @@ export class HtmlReportGenerator {
             <th>Paris</th>
             <th>Genève</th>
             <th>Amsterdam</th>
+            <th>Zoug</th>
             <th>Londres</th>
         </tr>
         <tr>
             <td><strong>PERSONNEL</strong></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -1198,13 +1201,15 @@ export class HtmlReportGenerator {
             <td>250K€</td>
             <td>350K€</td>
             <td>280K€</td>
+            <td>380K€</td>
             <td>350K€</td>
         </tr>
         <tr>
-            <td>Traders (2)</td>
+            <td>Traders (2-3)</td>
             <td>300K€</td>
             <td>400K€</td>
             <td>340K€</td>
+            <td>450K€</td>
             <td>420K€</td>
         </tr>
         <tr>
@@ -1213,12 +1218,14 @@ export class HtmlReportGenerator {
             <td>150K€</td>
             <td>130K€</td>
             <td>160K€</td>
+            <td>160K€</td>
         </tr>
         <tr>
-            <td>Support (3-4)</td>
+            <td>Support (2-3)</td>
             <td>140K€</td>
             <td>180K€</td>
             <td>160K€</td>
+            <td>190K€</td>
             <td>200K€</td>
         </tr>
         <tr style="background-color: #f1f5f9;">
@@ -1226,6 +1233,7 @@ export class HtmlReportGenerator {
             <td><strong>810K€</strong></td>
             <td><strong>1,080K€</strong></td>
             <td><strong>910K€</strong></td>
+            <td><strong>1,180K€</strong></td>
             <td><strong>1,130K€</strong></td>
         </tr>
         <tr>
@@ -1233,10 +1241,12 @@ export class HtmlReportGenerator {
             <td>98K€</td>
             <td>171K€</td>
             <td>128K€</td>
+            <td>165K€</td>
             <td>195K€</td>
         </tr>
         <tr>
             <td><strong>IT & SYSTÈMES</strong></td>
+            <td>194K€</td>
             <td>194K€</td>
             <td>194K€</td>
             <td>194K€</td>
@@ -1247,6 +1257,7 @@ export class HtmlReportGenerator {
             <td>124K€</td>
             <td>142K€</td>
             <td>124K€</td>
+            <td>142K€</td>
             <td>156K€</td>
         </tr>
         <tr>
@@ -1254,6 +1265,7 @@ export class HtmlReportGenerator {
             <td>64K€</td>
             <td>86K€</td>
             <td>82K€</td>
+            <td>86K€</td>
             <td>98K€</td>
         </tr>
     </table>
@@ -1378,6 +1390,15 @@ export class HtmlReportGenerator {
             <td>5.81 M€</td>
             <td>91</td>
         </tr>
+        <tr style="background-color: #fef2f2;">
+            <td>13</td>
+            <td><strong>Zoug</strong></td>
+            <td>1.189</td>
+            <td>1.092</td>
+            <td>1.406</td>
+            <td><strong>3.687 M€</strong></td>
+            <td>123</td>
+        </tr>
     </table>
     
     <div class="highlight-box">
@@ -1386,6 +1407,7 @@ export class HtmlReportGenerator {
             <li><strong>Paris (4ème position)</strong> : Excellent équilibre coût/qualité parmi les hubs européens majeurs</li>
             <li><strong>Économies d'échelle</strong> : Réduction du ratio €/tonne de 75% entre An 1 et An 3</li>
             <li><strong>Zones offshore</strong> (Maroc, Maurice) : Coûts les plus bas mais avec limitations opérationnelles</li>
+            <li><strong>Zoug (13ème position)</strong> : Coûts élevés (123€/tonne) mais justifiés par excellence fiscale et trading</li>
             <li><strong>Hubs premium</strong> (Genève, Londres, Singapour) : Coûts élevés compensés par accès privilégié aux marchés</li>
         </ul>
     </div>
@@ -1510,8 +1532,17 @@ export class HtmlReportGenerator {
             <td>5.13</td>
             <td>187.4%</td>
         </tr>
-        <tr style="background-color: #fef2f2;">
+        <tr style="background-color: #dcfce7;">
             <td>12</td>
+            <td><strong>Zoug</strong></td>
+            <td><strong>-0.301</strong></td>
+            <td>1.034</td>
+            <td>6.292</td>
+            <td>5.29</td>
+            <td><strong>468.5%</strong></td>
+        </tr>
+        <tr style="background-color: #fef2f2;">
+            <td>13</td>
             <td>Londres</td>
             <td><strong>-0.67</strong></td>
             <td>2.17</td>
@@ -1538,6 +1569,7 @@ export class HtmlReportGenerator {
             <h4>Classement ROI 3 ans</h4>
             <ol>
                 <li><strong>Paris : 543.2%</strong></li>
+                <li><strong>Zoug : 468.5%</strong></li>
                 <li>Chypre : 248.8%</li>
                 <li>Andorre : 242.4%</li>
                 <li>Singapour : 200.0%</li>
@@ -2025,8 +2057,20 @@ export class HtmlReportGenerator {
             <td>7.41</td>
             <td><span class="badge badge-warning">POSSIBLE</span></td>
         </tr>
-        <tr style="background-color: #fef3c7;">
+        <tr style="background-color: #dcfce7;">
             <td>6</td>
+            <td><strong>Zoug</strong></td>
+            <td>RECOMMANDÉ</td>
+            <td>9.50</td>
+            <td>6.70</td>
+            <td>6.50</td>
+            <td>8.00</td>
+            <td>7.20</td>
+            <td><strong>7.37</strong></td>
+            <td><span class="badge badge-success">RECOMMANDÉ</span></td>
+        </tr>
+        <tr style="background-color: #fef3c7;">
+            <td>7</td>
             <td>Londres</td>
             <td>POSSIBLE</td>
             <td>8.00</td>
@@ -2035,6 +2079,18 @@ export class HtmlReportGenerator {
             <td>8.00</td>
             <td>6.47</td>
             <td>6.72</td>
+            <td><span class="badge badge-warning">POSSIBLE</span></td>
+        </tr>
+        <tr style="background-color: #fef3c7;">
+            <td>8</td>
+            <td>Hambourg</td>
+            <td>POSSIBLE</td>
+            <td>10.00</td>
+            <td>6.75</td>
+            <td>4.19</td>
+            <td>6.00</td>
+            <td>6.74</td>
+            <td>6.78</td>
             <td><span class="badge badge-warning">POSSIBLE</span></td>
         </tr>
         <tr style="background-color: #fee2e2;">
@@ -2048,18 +2104,6 @@ export class HtmlReportGenerator {
             <td>1.50</td>
             <td>2.95</td>
             <td><span class="badge badge-danger">NON RECOMMANDÉ</span></td>
-        </tr>
-        <tr style="background-color: #fef3c7;">
-            <td>7</td>
-            <td>Hambourg</td>
-            <td>POSSIBLE</td>
-            <td>10.00</td>
-            <td>6.75</td>
-            <td>4.19</td>
-            <td>6.00</td>
-            <td>6.74</td>
-            <td>6.78</td>
-            <td><span class="badge badge-warning">POSSIBLE</span></td>
         </tr>
         <tr style="background-color: #fee2e2;">
             <td>8</td>
